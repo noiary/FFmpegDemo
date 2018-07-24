@@ -7,25 +7,12 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <android.support.v4.widget.NestedScrollView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        >
-
-        <TextView
-            android:id="@+id/tv_log"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-
-            tools:text="tv_logtv_logtv_logtv_logtv_logtv_logtv_logtv_logtv_logtv_logtv_logtv_logtv_logtv_logtv_logtv_logtv_logtv_logtv_logtv_logtv_logtv_logtv_logtv_logtv_logtv_logtv_logtv_logtv_logtv_logtv_log"/>
-    </android.support.v4.widget.NestedScrollView>
-
 
     <TextView
         android:id="@+id/tv_src_0"
         android:layout_width="80dp"
         android:layout_height="50dp"
-        android:layout_marginTop="50dp"
+        android:layout_marginTop="20dp"
         android:background="#3c3f41"
         android:gravity="center"
         android:text="src0"
@@ -57,7 +44,7 @@
         android:layout_marginLeft="8dp"
         android:layout_marginRight="8dp"
         android:layout_marginStart="8dp"
-        android:layout_marginTop="30dp"
+        android:layout_marginTop="15dp"
         android:background="#2b2b2b"
         android:gravity="center"
         android:paddingLeft="20dp"
@@ -75,7 +62,7 @@
         android:id="@+id/btn_merge"
         android:layout_width="match_parent"
         android:layout_height="50dp"
-        android:layout_marginTop="50dp"
+        android:layout_marginTop="30dp"
         android:text="合并"
         app:layout_constraintTop_toBottomOf="@id/tv_output"/>
 
@@ -104,4 +91,21 @@
         android:layout_marginTop="5dp"
         android:text="回声"
         app:layout_constraintTop_toBottomOf="@id/btn_speed"/>
+
+    <android.support.v4.widget.NestedScrollView
+        android:id="@+id/nsv"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btn_echo"
+        >
+
+        <TextView
+            android:id="@+id/tv_log"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+            tools:text="tv_logtv_logtv_logtv_logtv_logtv_logtv_logtv_logtv_logtv_logtv_logtv_logtv_logtv_logtv_logtv_logtv_logtv_logtv_logtv_logtv_logtv_logtv_logtv_logtv_logtv_logtv_logtv_logtv_logtv_logtv_log"/>
+    </android.support.v4.widget.NestedScrollView>
+
 </android.support.constraint.ConstraintLayout>
