@@ -14,9 +14,9 @@ import butterknife.ButterKnife
 import butterknife.OnClick
 import butterknife.OnTextChanged
 import butterknife.Unbinder
-import com.maodq.ffmpegdemo.FFmpegHelper.Companion.output
-import com.maodq.ffmpegdemo.FFmpegHelper.Companion.src_0
-import com.maodq.ffmpegdemo.FFmpegHelper.Companion.src_1
+import com.maodq.ffmpegdemo.FFmpegHelper2.Companion.output
+import com.maodq.ffmpegdemo.FFmpegHelper2.Companion.src_0
+import com.maodq.ffmpegdemo.FFmpegHelper2.Companion.src_1
 import io.reactivex.Flowable
 import io.reactivex.android.schedulers.AndroidSchedulers
 import io.reactivex.schedulers.Schedulers
@@ -26,7 +26,7 @@ import java.io.File
 
 class MainActivity : AppCompatActivity() {
     private var unbinder: Unbinder? = null
-    private var ffmpegHelper: FFmpegHelper? = null
+    private var ffmpegHelper: IFFmpeg? = null
 
     companion object {
         private const val TAG = "MainActivity"
@@ -52,7 +52,7 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun init() {
-        ffmpegHelper = FFmpegHelper(this, tv_log)
+        ffmpegHelper = FFmpegHelper2(this, tv_log)
     }
 
     @OnTextChanged(R.id.tv_log)
@@ -86,9 +86,8 @@ class MainActivity : AppCompatActivity() {
             R.id.btn_voice -> {
                 // https://blog.csdn.net/nil_lu/article/details/52078488
                 // 声音-30dB
-//                ffmpegRun("-i $src_0 -af volume=-3dB $output")
-                // 以上代码会出问题，开始就停不下来，并且不会结束
-                showToast("暂未实现")
+                ffmpegRun("-i $src_0 -af volume=-30dB $output")
+//                showToast("暂未实现")
             }
 
             R.id.btn_speed -> {
