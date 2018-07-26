@@ -38,7 +38,7 @@ dependencies {
 //    implementation 'cn.dxjia:ffmpegexecutor:0.1.7'
 //    compile 'com.writingminds:FFmpegAndroid:0.3.2'
 
-    implementation 'com.arthenica:mobile-ffmpeg-full:2.0'
+    implementation 'com.arthenica:mobile-ffmpeg-min:2.0'
 
     implementation 'com.jakewharton:butterknife:8.8.1'
     kapt 'com.jakewharton:butterknife-compiler:8.8.1'
