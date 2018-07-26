@@ -108,16 +108,6 @@ class MainActivity : AppCompatActivity() {
         File(output).delete()
     }
 
-//    private fun ffplay(path: String) {
-//        Flowable.just(path)
-//                .observeOn(AndroidSchedulers.mainThread())
-//                .filter { checkFileExists(it) }
-//                .subscribeOn(Schedulers.io())
-//                .map { ffmpegHelper!!.execute(arrayOf("ffplay", it), handler) }
-//                .observeOn(AndroidSchedulers.mainThread())
-//                .subscribe()
-//    }
-
     private fun checkFileExists(path: String): Boolean {
         val file = File(path)
         if (!file.exists()) {
@@ -153,14 +143,6 @@ class MainActivity : AppCompatActivity() {
             Toast.makeText(applicationContext, s, Toast.LENGTH_SHORT).show()
         }
     }
-
-    private fun test() {
-        var map = java.util.HashMap<String, Int>()
-        val values = map.values
-        val keys = map.keys
-        val entries = map.entries
-    }
-
 
     override fun onDestroy() {
         ffmpegHelper!!.close()

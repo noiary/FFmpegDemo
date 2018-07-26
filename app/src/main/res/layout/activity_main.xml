@@ -104,7 +104,6 @@
             android:id="@+id/tv_log"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-
             tools:text="tv_logtv_logtv_logtv_logtv_logtv_logtv_logtv_logtv_logtv_logtv_logtv_logtv_logtv_logtv_logtv_logtv_logtv_logtv_logtv_logtv_logtv_logtv_logtv_logtv_logtv_logtv_logtv_logtv_logtv_logtv_log"/>
     </android.support.v4.widget.NestedScrollView>
 
