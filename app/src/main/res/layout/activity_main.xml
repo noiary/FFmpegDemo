@@ -63,7 +63,7 @@
         android:layout_width="match_parent"
         android:layout_height="50dp"
         android:layout_marginTop="30dp"
-        android:text="合并"
+        android:text="Merge"
         app:layout_constraintTop_toBottomOf="@id/tv_output"/>
 
     <Button
@@ -71,7 +71,7 @@
         android:layout_width="match_parent"
         android:layout_height="50dp"
         android:layout_marginTop="5dp"
-        android:text="音量"
+        android:text="Voice"
         app:layout_constraintTop_toBottomOf="@id/btn_merge"/>
 
 
@@ -80,7 +80,7 @@
         android:layout_width="match_parent"
         android:layout_height="50dp"
         android:layout_marginTop="5dp"
-        android:text="语速"
+        android:text="Speed"
         app:layout_constraintTop_toBottomOf="@id/btn_voice"/>
 
 
@@ -89,7 +89,7 @@
         android:layout_width="match_parent"
         android:layout_height="50dp"
         android:layout_marginTop="5dp"
-        android:text="回声"
+        android:text="Echo"
         app:layout_constraintTop_toBottomOf="@id/btn_speed"/>
 
     <android.support.v4.widget.NestedScrollView

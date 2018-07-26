@@ -94,7 +94,7 @@ class MainActivity : AppCompatActivity() {
             R.id.btn_speed -> {
 //                showToast("暂未实现")
                 // https://blog.csdn.net/matrix_laboratory/article/details/53158307
-                ffmpegRun("-i $src_0 -filter:a \"atempo=0.5\" -vn $output")
+                ffmpegRun("-i $src_0 -filter:a atempo=0.5 -vn $output")
             }
 
             R.id.btn_echo -> {
@@ -152,6 +152,13 @@ class MainActivity : AppCompatActivity() {
         } else {
             Toast.makeText(applicationContext, s, Toast.LENGTH_SHORT).show()
         }
+    }
+
+    private fun test() {
+        var map = java.util.HashMap<String, Int>()
+        val values = map.values
+        val keys = map.keys
+        val entries = map.entries
     }
 
 
