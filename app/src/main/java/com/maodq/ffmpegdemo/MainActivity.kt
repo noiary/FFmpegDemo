@@ -14,9 +14,9 @@ import butterknife.ButterKnife
 import butterknife.OnClick
 import butterknife.OnTextChanged
 import butterknife.Unbinder
-import com.maodq.ffmpegdemo.FFmpegHelper2.Companion.output
-import com.maodq.ffmpegdemo.FFmpegHelper2.Companion.src_0
-import com.maodq.ffmpegdemo.FFmpegHelper2.Companion.src_1
+import com.maodq.ffmpegdemo.FFmpegHelper.Companion.output
+import com.maodq.ffmpegdemo.FFmpegHelper.Companion.src_0
+import com.maodq.ffmpegdemo.FFmpegHelper.Companion.src_1
 import io.reactivex.Flowable
 import io.reactivex.android.schedulers.AndroidSchedulers
 import io.reactivex.schedulers.Schedulers
@@ -52,7 +52,7 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun init() {
-        ffmpegHelper = FFmpegHelper2(this, tv_log)
+        ffmpegHelper = FFmpegHelper(this, tv_log)
     }
 
     @OnTextChanged(R.id.tv_log)
