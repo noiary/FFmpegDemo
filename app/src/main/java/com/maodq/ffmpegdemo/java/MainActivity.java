@@ -77,7 +77,7 @@ public class MainActivity extends AppCompatActivity {
             // 音量
             case R.id.btn_voice:
                 // https://blog.csdn.net/nil_lu/article/details/52078488
-                part = "volume=-30dB";
+                part = "-af volume=-30dB";
                 order = String.format("-i %s %s %s", src_0, part, output);
                 ffmpegRun(order);
                 break;
