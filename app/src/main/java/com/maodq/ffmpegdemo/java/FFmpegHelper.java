@@ -24,7 +24,7 @@ public class FFmpegHelper implements IFFmpeg {
     }
 
     @Override public void execute(String args) {
-        _execute(args);
+        ThreadManager.getSingleExecutor().execute(() -> _execute(args));
     }
 
     private void _execute(String args) {
